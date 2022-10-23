@@ -23,6 +23,8 @@ public final class CookieUtil {
      * @return
      */
     public static String getCookieValue(HttpServletRequest request, String cookieName) {
+        getCookieValue(request, cookieName, false);
+        //要按我的来写嘛
         return getCookieValue(request, cookieName, false);
     }
 

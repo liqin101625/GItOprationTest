@@ -23,6 +23,19 @@ public final class CookieUtil {
      * @return
      */
     public static String getCookieValue(HttpServletRequest request, String cookieName) {
+        //这就是我补充的方法，我来看看冲突是怎么产生的
+        return getCookieValue(request, cookieName, false);
+    }
+
+    /**
+     * 得到Cookie的值, 不编码,这个方法不完全需要补充；
+     *
+     * @param request
+     * @param cookieName
+     * @return
+     */
+    public static String getCookieValue1(HttpServletRequest request, String cookieName) {
+        //这就是我补充的方法
         return getCookieValue(request, cookieName, false);
     }
 
